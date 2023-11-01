@@ -1,6 +1,7 @@
-Basandote en el siguiente html y javascript,inserta p con el texto 'Voy dentro!', dentro de todos los div con la clase .fn-insert-here
+<!-- Basandote en el siguiente html y javascript,inserta p con el texto 'Voy dentro!', dentro de todos los div con la clase .fn-insert-here
 
-```html
+```html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,4 +15,21 @@ Basandote en el siguiente html y javascript,inserta p con el texto 'Voy dentro!'
    <div class="fn-insert-here"></div>
    <div>Aqui no va un p</div>
 </body>
-</html>```
+
+<script>
+var insert = document.querySelectorAll('.fn-insert-here');
+var dentro = document.createElement('p');
+
+
+insert.forEach(element =>{
+
+    element.innerHTML = "Voy dentro!";
+
+})
+
+
+
+
+
+</script>
+</html>
